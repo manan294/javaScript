@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Met</title>
+  </head>
+  <body>
+    <script>
+      let age = 34;
+      let gender = "female"; //male and female
+      let finaldiscount;
+
+      if (age <= 5) {
+        ticketdiscount = 100;
+      } else if (gender === "female" || age <= 8) {
+        ticketdiscount = 50;
+      } else if (age >= 65) {
+        ticketdiscount = 30;
+      } else {
+        ticketdiscount = 0;
+      }
+
+      console.log(`Your ticket discount is ${ticketdiscount}%`);
+    </script>
+  </body>
+</html>

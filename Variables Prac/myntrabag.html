@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style2.css" />
+    <title>Myntra bag var</title>
+  </head>
+  <body>
+    <main>
+      <button
+        class="bag"
+        onclick="Total += 1;
+      document.querySelector('#total-items').innerHTML = 'your bag has '+ Total +' items'
+      "
+      >
+        Add to bag
+      </button>
+      <button
+        class="wish"
+        onclick="Total -= 1;
+      document.querySelector('#total-items').innerHTML = 'your bag has '+ Total +' items'
+      
+      "
+      >
+        MOVE TO WISHLIST
+      </button>
+      <button
+        class="item"
+        onclick="Total += 2
+      document.querySelector('#total-items').innerHTML = 'your bag has '+ Total +' items'
+      
+      "
+      >
+        Add 1+1 sale item
+      </button>
+      <br />
+      <h1 id="total-items"></h1>
+    </main>
+
+    <script>
+      let Total = 0;
+      document.querySelector("#total-items").innerHTML =
+        "your bag has " + Total + " items";
+
+      //   let num = 5;
+
+      //   num = num + 1;
+      //   //    OR
+      //   num += 1;
+
+      //   console.log(num);
+
+
+      console.log(eval('1+2*5'));
+    </script>
+  </body>
+</html>
