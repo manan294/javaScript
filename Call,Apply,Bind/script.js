@@ -21,7 +21,7 @@ abcd.call(custobj);
 
 
 const custobj2 = {
-  name: "John",
+  name: "Ansull",
 //   age: 30,
 };
 
@@ -30,3 +30,19 @@ function abcd(a,b,c) {
 }
 
 abcd.apply(custobj2,[1,2,3]);
+
+//BIND
+
+
+const custobj3 = {
+  name: "manan",
+  age: 18,
+};  
+
+function abcd(a, b, c) {
+  console.log(this);
+}
+
+const laterusefunction = abcd.bind(custobj3);
+
+laterusefunction();
