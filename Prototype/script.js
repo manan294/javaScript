@@ -17,4 +17,4 @@ p1.sayHello(); // Hello, my name is Manan
 p2.sayHello(); // Hello, my name is Aarav
 
 // Check that the method is shared
-console.log(p1.sayHello === p2.sayHello); // true
+console.log(p1.sayHello === p2.sayHello);
