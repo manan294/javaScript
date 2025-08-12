@@ -4,7 +4,6 @@
 
 //CALL
 
-
 //for example obj
 const custobj = {
   name: "John",
@@ -17,8 +16,9 @@ function abcd() {
 
 abcd.call(custobj);
 
-//APPLY
 
+
+//APPLY
 
 const custobj2 = {
   name: "Ansull",
@@ -31,8 +31,9 @@ function abcd(a,b,c) {
 
 abcd.apply(custobj2,[1,2,3]);
 
-//BIND
 
+
+//BIND
 
 const custobj3 = {
   name: "manan",
