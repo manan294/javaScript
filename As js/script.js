@@ -114,4 +114,77 @@
 
 
 
+
+
 //async await
+
+// async function getData(){
+//   let data = await fetch("https://randomuser.me/api/")
+//     .then((raw) => raw.json())
+//     .then((Data) => console.log(Data.results[0]));
+//   // console.log(data);
+// }
+
+// getData();
+
+
+
+
+
+
+// Event loop
+
+
+
+
+
+//Callbacks vs Promises vs Async Await
+
+
+//with callback
+// function dataFetcher(url,callback) {
+//   axios.get(url).then((result) => callback(result));
+// }
+
+// dataFetcher();
+
+
+// dataFetcher("https://randomuser.me/api/", function (result) {
+//   console.log(result);
+// });
+
+
+
+
+//with promise
+// function dataFetcher(url) {
+//   const status = new Promise(function (resolve, reject) {
+//     fetch(url)
+//       .then((raw) => raw.json())
+//       .then((result) => {
+//         resolve(result);
+//       })
+//       .catch((error) => reject(error));
+//   });
+
+//   return status;
+// }
+
+// dataFetcher("https://randomuser.me/api/").then(function (result) {
+//   console.log(result);
+// });
+
+
+
+
+//async await
+// async function dataFetcher(url) {
+//   let data = await fetch(url)
+//   let result = await data.json()
+//   return result;
+// }
+
+// async function displayData(){
+// let data = await dataFetcher("https://randomuser.me/api/")
+// console.log(data);}
+// displayData();
