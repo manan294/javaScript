@@ -188,3 +188,37 @@
 // let data = await dataFetcher("https://randomuser.me/api/")
 // console.log(data);}
 // displayData();
+
+
+
+
+
+//generators
+// function* generator(){
+//   console.log("Generator function started");
+// yield 1;
+//   console.log("first yield executed");
+// yield 2;
+//   console.log("second yield executed");
+// yield 3;
+// }
+
+// const ans = generator()
+// console.log(ans.next().value);
+// console.log(ans.next().value);
+// console.log(ans.next().value);
+
+
+
+
+
+
+//web workers
+var nums= Array.from({length: 1000}, (_, i) => i + 1);
+
+const worker = new Worker("worker.js");
+worker.postMessage(nums);
+
+worker.onmessage = function(data) {
+  console.log(data.data)
+}
